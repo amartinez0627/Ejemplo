@@ -1,0 +1,143 @@
+import java.util.*;
+ 
+// one class needs to have a main() method
+public class Tester
+{
+  // arguments are passed using the text field below this editor
+  public static void main(String[] args)
+  {
+   
+    int option = 0;
+    option = menu():
+    Scanner in = new Scanner(System.in);
+   
+    System.out.flush();
+    System.out.println("1.INGRESAR INFORMACION");
+    System.out.println("2.REPORTE");
+    System.out.println("3.FINALIZAR");
+    System.out.print("Eligue una opcion: ");
+    in.nextInt();
+   
+    switch(option){
+    
+      case 1:
+       enterInfo();
+       break;
+     
+      case 2:
+       displayInfo();
+       break;
+     
+      case 3:
+       System.out.print("Gracias por usar el programa, presiona ENTER para finalizar...");
+       break;
+     
+      default:
+        System.out.println("Opcion ingresada incorracta favor de intentar nuevamente...")
+    }
+   
+    return
+    
+    
+  }
+ 
+  void enterInfo(){
+   
+  }
+ 
+  void displayInfo(){
+   
+  }
+  
+  
+}
+ 
+public abstract class Entidad{
+  String name;
+  boolean active;
+                public String getName(){
+    }
+    public boolean getIfActive(){
+   
+    }
+    public boolean getIfActive(){
+   
+    public void printInfo(){
+       
+    }
+  }
+}
+ 
+public class Proveedores extends Entidad
+{
+  private String name;
+  private boolean active = false;
+ 
+  public Proveedores(String name, active)
+  {
+    this.name = name;
+    this.active = active;
+  }
+  public String getName()
+  {
+    return name;
+  }
+  public boolean getIfActive(){
+                return active;
+  }
+  public void printInfo(){
+   System.out.println("Soy un proveedor de nombre "+name+", y me gusta proveer articulos");
+    
+  }
+ 
+}
+ 
+public class Productos extends Entidad
+{
+  private String name;
+  private boolean active = false;
+ 
+  public Productos(String name, active)
+  {
+    this.name = name;
+    this.active = active;
+  }
+  public String getName()
+  {
+    return name;
+  }
+  public boolean getIfActive(){
+                return active;
+  }
+  public void printInfo(){
+   System.out.println("Soy un producto de nombre "+name+", y me gusta que me compren");
+    
+  }
+ 
+}
+ 
+ 
+ 
+public class Clientes extends Entidad
+{
+  private String name;
+  private boolean active = false;
+ 
+  public Clientes(String name, active)
+  {
+    this.name = name;
+    this.active = active;
+  }
+  public String getName()
+  {
+    return name;
+  }
+  public boolean getIfActive(){
+                return active;
+  }
+  public void printInfo(){
+   System.out.println("Soy un cliente de nombre "+name+", y me gusta comprar cosas");
+    
+  }
+ 
+}
